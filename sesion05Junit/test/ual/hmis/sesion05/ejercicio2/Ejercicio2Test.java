@@ -27,6 +27,9 @@ class Ejercicio2Test {
 		// Act
 		// Assert
 		assertEquals(Boolean.parseBoolean(result), e2.login(username, password));
+		assertFalse(e2.login("", password));
+		assertFalse(e2.login(username, ""));
+		
 	}
 	
 }
