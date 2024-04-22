@@ -11,6 +11,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class Ejercicio4Test {
 
 	@ParameterizedTest(name = "Mezclar {0} con {1}")
+//	@CsvFileSource(resources = "ejercicio4.csv", delimiter = ';')
 	@CsvSource({
 		"'','',''",
 		"'','2,4,6,8,10','2,4,6,8,10'",
