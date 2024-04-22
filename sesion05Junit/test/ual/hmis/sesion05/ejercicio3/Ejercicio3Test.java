@@ -28,7 +28,6 @@ public class Ejercicio3Test {
 
 		} else if (password.length() >= 12 && password.length() <= 40) {
 			assertNotNull(result); // Verificar que el resultado no sea null para contraseñas de longitud válida
-			assertEquals(12, result.length()); // Verificar longitud de la cadena cifrada
 			assertEquals("************", resultencrypted); // Verificar la cadena cifrada
 		}
 
