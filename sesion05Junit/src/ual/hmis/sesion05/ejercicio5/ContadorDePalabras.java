@@ -6,17 +6,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ContadorDePalabras {
+	private String lista;
 
-	public ContadorDePalabras(String[] ejemplo) {
+	public ContadorDePalabras(String ejemplo) {
+		this.lista = ejemplo;
 	}
-
 
 	public String[] palabrasOrdenadasAlfabeticamente(String lista) {
 		String[] listaPalabras = lista.split(",");
 		ordenacionInsercion(listaPalabras);
 		return listaPalabras;
 	}
-
 
 	public String[] palabrasOrdenadasNumeroOcurrencias(String[] lista) {
 		Map<String, Integer> contadorOcurrencias = new HashMap<>();
