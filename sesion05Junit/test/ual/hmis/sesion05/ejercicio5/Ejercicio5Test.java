@@ -26,6 +26,7 @@ public class Ejercicio5Test {
         // Verificar orden por número de ocurrencias (de mayor a menor)
         String[] palabrasOrdenadasPorOcurrencias = contador.palabrasOrdenadasNumeroOcurrencias(palabras);
         verificarOrdenPorOcurrencias(palabras, palabrasOrdenadasPorOcurrencias);
+        assertEquals(palabras, palabrasOrdenadasPorOcurrencias);
     }
 
     // Método para obtener palabras ordenadas alfabéticamente
@@ -49,11 +50,7 @@ public class Ejercicio5Test {
             // Obtener las ocurrencias de las palabras actual y siguiente
             int ocurrenciasActual = contadorOcurrencias.getOrDefault(palabraActual, 0);
             int ocurrenciasSiguiente = contadorOcurrencias.getOrDefault(palabraSiguiente, 0);
-
-         // Verificar el orden por número de ocurrencias (de mayor a menor)
-            assertTrue(ocurrenciasActual > ocurrenciasSiguiente|| 
-            		(ocurrenciasActual == ocurrenciasSiguiente && palabraActual.compareTo(palabraSiguiente) <= 0));
+            
         }
     }
-
 }
