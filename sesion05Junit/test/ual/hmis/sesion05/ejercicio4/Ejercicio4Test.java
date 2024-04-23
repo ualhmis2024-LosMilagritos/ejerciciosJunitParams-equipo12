@@ -24,9 +24,7 @@ class Ejercicio4Test {
 	}
 
 	Comparable[] parseIntArray(String arrayStr) {
-		if (arrayStr.isEmpty()) {
-			return new Comparable[0];
-		}
+		
 		String[] parts = arrayStr.split(",");
 		Comparable[] array = new Comparable[parts.length];
 		for (int i = 0; i < parts.length; i++) {
