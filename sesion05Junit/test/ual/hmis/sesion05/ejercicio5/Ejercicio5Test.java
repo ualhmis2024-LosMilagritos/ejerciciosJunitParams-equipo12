@@ -51,8 +51,8 @@ public class Ejercicio5Test {
             int ocurrenciasSiguiente = contadorOcurrencias.getOrDefault(palabraSiguiente, 0);
 
          // Verificar el orden por número de ocurrencias (de mayor a menor)
-            assertTrue(ocurrenciasActual > ocurrenciasSiguiente||
-                       (ocurrenciasActual == ocurrenciasSiguiente && palabraActual.compareTo(palabraSiguiente) <= 0));
+            assertTrue(ocurrenciasActual > ocurrenciasSiguiente|| 
+            		(ocurrenciasActual == ocurrenciasSiguiente && palabraActual.compareTo(palabraSiguiente) <= 0));
         }
     }
 
